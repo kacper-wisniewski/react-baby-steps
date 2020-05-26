@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from './App.scss';
-import Hero from '../Hero/Hero.js';
+import List from '../List/List.js';
 
 class App extends React.Component {
   render() {
     return (
       <main className={styles.component}>
-        <Hero/>
+        <h1 className={styles.title}>To do list</h1>
+        <List title={['Things to do', <sup key='1'>soon!</sup>]} imageSource={'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'}>
+        </List>
       </main>
     )
   }

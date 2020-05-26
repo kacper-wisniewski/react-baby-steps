@@ -1,15 +1,20 @@
 import React from 'react';
 import styles from './Hero.scss';
+import PropTypes from 'prop-types';
 
-class App extends React.Component {
+const Hero = props => ({
   render() {
     return (
       <header className={styles.component}>
-        <img src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png" alt="" className={styles.image}/>
-        <h2 className={styles.title}>Things to do</h2>
+        <img src={props.imageSource} alt="" className={styles.image}/>
+        <h2 className={styles.title}>{props.titleText}</h2>
       </header>
     )
   }
-}
+})
 
-export default App;
+Hero.propTypes = {
+  titleText: PropTypes.node.isRequired,
+};
+
+export default Hero;
