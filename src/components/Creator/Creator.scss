@@ -39,3 +39,26 @@
     }
   }
 }
+
+.alert {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  height: 0;
+  transition: all 200ms;
+  flex-wrap: wrap;
+
+  &.alertShown {
+    opacity: 1;
+    height: auto;
+  }
+
+  h3{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}

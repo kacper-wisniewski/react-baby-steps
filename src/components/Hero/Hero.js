@@ -3,19 +3,19 @@ import styles from './Hero.scss';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
-const Hero = props => ({
+class Hero extends React.Component {
+  static ropTypes = {
+    titleText: PropTypes.node.isRequired,
+  }
+
   render() {
     return (
       <header className={styles.component}>
-        <img src={props.imageSource} alt="" className={styles.image}/>
-        <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
+        <img src={this.props.imageSource} alt="" className={styles.image}/>
+        <h2 className={styles.title}>{ReactHtmlParser(this.props.titleText)}</h2>
       </header>
     )
   }
-})
-
-Hero.propTypes = {
-  titleText: PropTypes.node.isRequired,
-};
+}
 
 export default Hero;
