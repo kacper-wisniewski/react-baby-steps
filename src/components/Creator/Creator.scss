@@ -42,17 +42,19 @@
 
 .alert {
   text-align: center;
-  margin: 20px 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   opacity: 0;
   height: 0;
   transition: all 200ms;
   flex-wrap: wrap;
+  overflow: hidden;
 
   &.alertShown {
     opacity: 1;
     height: auto;
+    margin: 20px 0;
   }
 
   h3{

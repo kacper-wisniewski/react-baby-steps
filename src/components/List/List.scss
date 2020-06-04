@@ -24,6 +24,15 @@
   }
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
 @media (max-width: 767px) {
 
   .columns {

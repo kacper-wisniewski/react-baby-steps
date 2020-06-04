@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
+    action: PropTypes.node,
   }
 
   static defaultProps = {
@@ -15,30 +16,30 @@ class Creator extends React.Component {
   state = {
     value: '',
     visibleButtons: false,
-    visibleAlert: false
+    visibleAlert: false,
   }
 
   handleChange = event => {
     // console.log(event);
     this.setState({
       value: event.target.value,
-      visibleButtons: event.target.value.length > 0
+      visibleButtons: event.target.value.length > 0,
     });
   }
 
   handleOK = () => {
-    if(this.state.value != ''){
+    if(this.state.value != '') {
       this.props.action(this.state.value);
       this.setState({
         value: '',
-        visibleButtons: false
+        visibleButtons: false,
       });
     }
   }
 
   handleCancel = () => {
     this.setState({
-      visibleAlert: true
+      visibleAlert: true,
     });
   }
 
@@ -46,14 +47,14 @@ class Creator extends React.Component {
     this.setState({
       value: '',
       visibleButtons: false,
-      visibleAlert: false
+      visibleAlert: false,
     });
   }
 
   handleReturn = () => {
     this.setState({
-      visibleAlert: false
-    })
+      visibleAlert: false,
+    });
   }
 
   render() {
