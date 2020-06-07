@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "heroku-prebuild": "npm install --dev",
     "lint": "eslint src/"
@@ -27,6 +28,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-html-parser": "^2.0.2",
+    "react-redux": "^7.0.1",
+    "redux": "^4.0.1",
     "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
@@ -44,6 +47,7 @@
     "lint-staged": "^10.2.8",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "redux-devtools-extension": "^2.13.8",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",

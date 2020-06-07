@@ -11,9 +11,10 @@ class Card extends React.Component {
   static defaultProps = {
   }
   render() {
+    const {title} = this.props;
     return (
       <section className={styles.component}>
-        <h3><span className={styles.icon}><Icon name={this.props.icon}/></span> {this.props.title}</h3>
+        <h3><span className={styles.icon}><Icon name={this.props.icon}/></span> {title}</h3>
       </section>
     );
   }
