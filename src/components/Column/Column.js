@@ -17,7 +17,6 @@ class Column extends React.Component {
   }
   render() {
     const {title, icon, cards, addCard} = this.props;
-    console.log(cards);
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{title}</h3>
