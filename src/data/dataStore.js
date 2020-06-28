@@ -13,6 +13,7 @@ export const settings = {
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
   FAQImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  defaultSearchIcon: 'search',
 };
 
 export const pageContents = {
@@ -82,6 +83,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>later!<sup>',
+    description: 'Things I should do sometime',
+    image: 'https://cdn.pixabay.com/photo/2020/02/24/06/33/crescent-4875339_1280.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'I should learn <sup>Now!</sup>',
+    description: 'Educational stuff',
+    image: 'https://cdn.pixabay.com/photo/2017/12/22/08/01/paper-3033204_1280.jpg',
+  },
 ];
 
 const columns = [
@@ -106,7 +119,19 @@ const columns = [
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
+    title: 'Hello there',
+    icon: 'question',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Workout',
+    icon: 'question',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-2',
+    title: 'Somthing else',
     icon: 'question',
   },
 ];
@@ -141,6 +166,26 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'General Kenobi',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-5',
+    title: 'Push up',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-5',
+    title: 'Squats',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-6',
+    title: 'Something',
   },
 ];
 
