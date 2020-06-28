@@ -12,11 +12,14 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  FAQImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+  FAQTitle: 'This is FAQ',
+  FAQContent: 'This is FAQ content',
 };
 
 export const listData = {
