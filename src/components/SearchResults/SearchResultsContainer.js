@@ -3,7 +3,7 @@ import SearchResult from './SearchResults.js';
 import {createActionAddCard, getCardsForSearch} from '../../redux/cardsRedux.js';
 
 const mapStateToProps = (state, props) => ({
-  cards: getCardsForSearch(state, props.id),
+  cards: getCardsForSearch(state, props.match.params.searchString),
 });
 
 const mapDispatchToProps = (dispatch) => ({
